@@ -3,8 +3,7 @@
 // @namespace    http://tampermonkey.net/
 // @version      1.0
 // @description  Expands E24's short URLs to their full form on hover
-// @author       You
-// @match        https://e24.no/*
+// @match        https://e24.no/
 // @grant        GM_xmlhttpRequest
 // @grant        GM.xmlHttpRequest
 // ==/UserScript==
