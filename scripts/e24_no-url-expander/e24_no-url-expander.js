@@ -126,4 +126,18 @@
 
     // Run on page load
     processLinks();
+
+     // Watch for dynamic content changes
+    const observer = new MutationObserver((mutations) => {
+        for (const mutation of mutations) {
+            if (mutation.addedNodes.length) {
+                processLinks();
+            }
+        }
+    });
+
+    observer.observe(document.body, {
+        childList: true,
+        subtree: true
+    });
 })();
